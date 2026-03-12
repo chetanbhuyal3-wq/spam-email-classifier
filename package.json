@@ -1,0 +1,16 @@
+{
+  "name": "pop-spam-email",
+  "version": "1.0.0",
+  "description": "A full-stack Machine Learning web application that detects whether an email is **Spam ⚠** or **Safe ✅** using NLP and Naive Bayes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

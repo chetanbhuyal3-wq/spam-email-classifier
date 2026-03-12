@@ -1,0 +1,30 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+
+const app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(express.static("public"));
+
+app.post("/check-email", (req, res) => {
+
+    const emailText = req.body.email.toLowerCase();
+
+    // Simple spam keywords
+    const spamWords = ["free", "win", "money", "prize", "click", "offer"];
+
+    let isSpam = spamWords.some(word => emailText.includes(word));
+
+    if(isSpam){
+        res.json({result:"spam"});
+    }else{
+        res.json({result:"safe"});
+    }
+
+});
+
+app.listen(3000, () => {
+    console.log("Server running on http://localhost:3000");
+});

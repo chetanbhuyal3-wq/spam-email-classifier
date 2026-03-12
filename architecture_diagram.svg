@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0f18"/>
+      <stop offset="100%" style="stop-color:#111420"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d7fff"/>
+      <stop offset="100%" style="stop-color:#2563d4"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#36e899"/>
+      <stop offset="100%" style="stop-color:#1fb870"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444"/>
+      <stop offset="100%" style="stop-color:#cc2222"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3d7fff"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#36e899"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ff4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.08" stroke="#4466aa" stroke-width="0.5">
+    <line x1="0" y1="60" x2="900" y2="60"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="0" y1="300" x2="900" y2="300"/>
+    <line x1="0" y1="360" x2="900" y2="360"/>
+    <line x1="0" y1="420" x2="900" y2="420"/>
+    <line x1="0" y1="480" x2="900" y2="480"/>
+    <line x1="0" y1="540" x2="900" y2="540"/>
+    <line x1="90" y1="0" x2="90" y2="580"/>
+    <line x1="180" y1="0" x2="180" y2="580"/>
+    <line x1="270" y1="0" x2="270" y2="580"/>
+    <line x1="360" y1="0" x2="360" y2="580"/>
+    <line x1="450" y1="0" x2="450" y2="580"/>
+    <line x1="540" y1="0" x2="540" y2="580"/>
+    <line x1="630" y1="0" x2="630" y2="580"/>
+    <line x1="720" y1="0" x2="720" y2="580"/>
+    <line x1="810" y1="0" x2="810" y2="580"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" fill="#dde3f0" font-size="18" font-weight="700" letter-spacing="1">SPAM EMAIL CLASSIFIER — SYSTEM ARCHITECTURE</text>
+  <line x1="60" y1="50" x2="840" y2="50" stroke="#1e2230" stroke-width="1"/>
+
+  <!-- ── LAYER LABELS ── -->
+  <text x="30" y="110" fill="#3d7fff" font-size="9" font-weight="700" letter-spacing="2" transform="rotate(-90,30,110)">CLIENT</text>
+  <text x="30" y="240" fill="#a78bfa" font-size="9" font-weight="700" letter-spacing="2" transform="rotate(-90,30,240)">SERVER</text>
+  <text x="30" y="390" fill="#36e899" font-size="9" font-weight="700" letter-spacing="2" transform="rotate(-90,30,390)">ML PIPELINE</text>
+  <text x="30" y="530" fill="#ffb03a" font-size="9" font-weight="700" letter-spacing="2" transform="rotate(-90,30,530)">STORAGE</text>
+
+  <!-- ─────── ROW 1: CLIENT ─────── -->
+  <!-- Browser box -->
+  <rect x="70" y="68" width="200" height="80" rx="10" fill="#141720" stroke="#3d7fff" stroke-width="1.5"/>
+  <rect x="70" y="68" width="200" height="28" rx="10" fill="#3d7fff" opacity="0.7"/>
+  <rect x="70" y="86" width="200" height="10" fill="#3d7fff" opacity="0.7"/>
+  <text x="170" y="84" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">🌐  WEB BROWSER</text>
+  <text x="170" y="112" text-anchor="middle" fill="#8ab4ff" font-size="9">HTML + CSS + JavaScript</text>
+  <text x="170" y="128" text-anchor="middle" fill="#5a637a" font-size="9">index.html (Syne font, dark UI)</text>
+
+  <!-- User action -->
+  <rect x="340" y="68" width="200" height="80" rx="10" fill="#141720" stroke="#3d7fff" stroke-width="1.5"/>
+  <rect x="340" y="68" width="200" height="28" rx="10" fill="#3d7fff" opacity="0.7"/>
+  <rect x="340" y="86" width="200" height="10" fill="#3d7fff" opacity="0.7"/>
+  <text x="440" y="84" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">✍️  USER INPUT</text>
+  <text x="440" y="112" text-anchor="middle" fill="#8ab4ff" font-size="9">Paste email text</text>
+  <text x="440" y="128" text-anchor="middle" fill="#5a637a" font-size="9">Click "Check Email" button</text>
+
+  <!-- Alert popup -->
+  <rect x="610" y="68" width="230" height="80" rx="10" fill="#141720" stroke="#3d7fff" stroke-width="1.5"/>
+  <rect x="610" y="68" width="230" height="28" rx="10" fill="#3d7fff" opacity="0.7"/>
+  <rect x="610" y="86" width="230" height="10" fill="#3d7fff" opacity="0.7"/>
+  <text x="725" y="84" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">🔔  POPUP ALERT + RESULTS</text>
+  <text x="725" y="112" text-anchor="middle" fill="#8ab4ff" font-size="9">⚠ SPAM Warning / ✅ Safe Alert</text>
+  <text x="725" y="128" text-anchor="middle" fill="#5a637a" font-size="9">Probability bars + Risk level badge</text>
+
+  <!-- Client arrows -->
+  <line x1="270" y1="108" x2="338" y2="108" stroke="#3d7fff" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <line x1="540" y1="108" x2="608" y2="108" stroke="#3d7fff" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- ─────── ROW 2: FLASK SERVER ─────── -->
+  <line x1="440" y1="148" x2="440" y2="175" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- Flask App -->
+  <rect x="240" y="180" width="220" height="80" rx="10" fill="#141720" stroke="#a78bfa" stroke-width="1.5"/>
+  <rect x="240" y="180" width="220" height="28" rx="10" fill="#a78bfa" opacity="0.6"/>
+  <rect x="240" y="198" width="220" height="10" fill="#a78bfa" opacity="0.6"/>
+  <text x="350" y="196" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">🐍  FLASK APP  (app.py)</text>
+  <text x="350" y="224" text-anchor="middle" fill="#c4b5fd" font-size="9">GET /   →  Serve UI</text>
+  <text x="350" y="240" text-anchor="middle" fill="#c4b5fd" font-size="9">POST /classify  |  POST /retrain  |  GET /metrics</text>
+
+  <!-- Request/Response labels -->
+  <text x="355" y="170" text-anchor="middle" fill="#a78bfa" font-size="8">HTTP POST /classify  {email_text}</text>
+
+  <line x1="440" y1="260" x2="440" y2="295" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+  <text x="460" y="282" fill="#a78bfa" font-size="8">call predict()</text>
+
+  <!-- ─────── ROW 3: ML PIPELINE ─────── -->
+
+  <!-- Step boxes -->
+  <!-- Preprocess -->
+  <rect x="60" y="300" width="145" height="90" rx="10" fill="#0f1820" stroke="#36e899" stroke-width="1.5"/>
+  <text x="132" y="320" text-anchor="middle" fill="#36e899" font-size="10" font-weight="700">① PREPROCESS</text>
+  <text x="132" y="338" text-anchor="middle" fill="#5a9970" font-size="8">• Lowercase</text>
+  <text x="132" y="352" text-anchor="middle" fill="#5a9970" font-size="8">• Remove punctuation</text>
+  <text x="132" y="366" text-anchor="middle" fill="#5a9970" font-size="8">• Remove stopwords</text>
+  <text x="132" y="380" text-anchor="middle" fill="#5a9970" font-size="8">• Replace URLs / numbers</text>
+
+  <!-- TF-IDF -->
+  <rect x="230" y="300" width="145" height="90" rx="10" fill="#0f1820" stroke="#36e899" stroke-width="1.5"/>
+  <text x="302" y="320" text-anchor="middle" fill="#36e899" font-size="10" font-weight="700">② TF-IDF</text>
+  <text x="302" y="338" text-anchor="middle" fill="#5a9970" font-size="8">• Unigrams + bigrams</text>
+  <text x="302" y="352" text-anchor="middle" fill="#5a9970" font-size="8">• 15,000 max features</text>
+  <text x="302" y="366" text-anchor="middle" fill="#5a9970" font-size="8">• Sublinear TF scaling</text>
+  <text x="302" y="380" text-anchor="middle" fill="#5a9970" font-size="8">• Feature matrix output</text>
+
+  <!-- Naive Bayes -->
+  <rect x="400" y="300" width="145" height="90" rx="10" fill="#0f1820" stroke="#36e899" stroke-width="1.5"/>
+  <text x="472" y="320" text-anchor="middle" fill="#36e899" font-size="10" font-weight="700">③ NAIVE BAYES</text>
+  <text x="472" y="338" text-anchor="middle" fill="#5a9970" font-size="8">• MultinomialNB</text>
+  <text x="472" y="352" text-anchor="middle" fill="#5a9970" font-size="8">• alpha = 0.1</text>
+  <text x="472" y="366" text-anchor="middle" fill="#5a9970" font-size="8">• P(spam | features)</text>
+  <text x="472" y="380" text-anchor="middle" fill="#5a9970" font-size="8">• sklearn Pipeline</text>
+
+  <!-- Evaluation -->
+  <rect x="570" y="300" width="145" height="90" rx="10" fill="#0f1820" stroke="#36e899" stroke-width="1.5"/>
+  <text x="642" y="320" text-anchor="middle" fill="#36e899" font-size="10" font-weight="700">④ EVALUATE</text>
+  <text x="642" y="338" text-anchor="middle" fill="#5a9970" font-size="8">• Accuracy</text>
+  <text x="642" y="352" text-anchor="middle" fill="#5a9970" font-size="8">• Precision / Recall</text>
+  <text x="642" y="366" text-anchor="middle" fill="#5a9970" font-size="8">• F1-Score</text>
+  <text x="642" y="380" text-anchor="middle" fill="#5a9970" font-size="8">• Confusion Matrix</text>
+
+  <!-- Result box -->
+  <rect x="740" y="300" width="120" height="90" rx="10" fill="#0f1820" stroke="#ffb03a" stroke-width="1.5"/>
+  <text x="800" y="323" text-anchor="middle" fill="#ffb03a" font-size="10" font-weight="700">⑤ OUTPUT</text>
+  <text x="800" y="341" text-anchor="middle" fill="#997040" font-size="9">label: spam/ham</text>
+  <text x="800" y="355" text-anchor="middle" fill="#997040" font-size="9">spam_prob %</text>
+  <text x="800" y="369" text-anchor="middle" fill="#997040" font-size="9">ham_prob %</text>
+  <text x="800" y="383" text-anchor="middle" fill="#997040" font-size="9">risk_level</text>
+
+  <!-- ML pipeline arrows -->
+  <line x1="205" y1="345" x2="228" y2="345" stroke="#36e899" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="375" y1="345" x2="398" y2="345" stroke="#36e899" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="545" y1="345" x2="568" y2="345" stroke="#36e899" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="715" y1="345" x2="738" y2="345" stroke="#ffb03a" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- preprocess connect to flask -->
+  <line x1="350" y1="260" x2="132" y2="298" stroke="#36e899" stroke-width="1" stroke-dasharray="5,3" opacity="0.6"/>
+
+  <!-- ─────── ROW 4: STORAGE ─────── -->
+  <!-- CSV -->
+  <rect x="60" y="430" width="160" height="70" rx="10" fill="#141710" stroke="#ffb03a" stroke-width="1.5"/>
+  <text x="140" y="452" text-anchor="middle" fill="#ffb03a" font-size="10" font-weight="700">📄  emails.csv</text>
+  <text x="140" y="470" text-anchor="middle" fill="#997040" font-size="9">Training dataset</text>
+  <text x="140" y="486" text-anchor="middle" fill="#997040" font-size="9">label, text columns</text>
+
+  <!-- Model PKL -->
+  <rect x="260" y="430" width="160" height="70" rx="10" fill="#141710" stroke="#ffb03a" stroke-width="1.5"/>
+  <text x="340" y="452" text-anchor="middle" fill="#ffb03a" font-size="10" font-weight="700">💾  spam_model.pkl</text>
+  <text x="340" y="470" text-anchor="middle" fill="#997040" font-size="9">Saved Pipeline object</text>
+  <text x="340" y="486" text-anchor="middle" fill="#997040" font-size="9">TF-IDF + NB weights</text>
+
+  <!-- train_model.py -->
+  <rect x="460" y="430" width="180" height="70" rx="10" fill="#141710" stroke="#ffb03a" stroke-width="1.5"/>
+  <text x="550" y="452" text-anchor="middle" fill="#ffb03a" font-size="10" font-weight="700">🔧  train_model.py</text>
+  <text x="550" y="470" text-anchor="middle" fill="#997040" font-size="9">load → preprocess → train</text>
+  <text x="550" y="486" text-anchor="middle" fill="#997040" font-size="9">evaluate → pickle.dump()</text>
+
+  <!-- Storage arrows -->
+  <line x1="140" y1="430" x2="132" y2="392" stroke="#ffb03a" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="340" y1="430" x2="472" y2="392" stroke="#ffb03a" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="550" y1="430" x2="302" y2="392" stroke="#ffb03a" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- Result back to UI -->
+  <path d="M800,300 L800,248 L725,180" stroke="#ffb03a" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowRed)" opacity="0.8"/>
+  <text x="820" y="250" fill="#ffb03a" font-size="8">JSON response</text>
+</svg>
